@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "wordtolatex"
+version = "1.0.0"
+description = "Convertitore da documenti Word/ODT a PDF con stile LaTeX"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+
+dependencies = [
+    "python-docx>=0.8.11",
+    "odfpy>=1.4.1",
+    "python-pptx>=0.6.21",
+    "tkinterdnd2>=0.4.2",
+]
+
+[project.scripts]
+wordtolatex = "wordtolatex.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["wordtolatex*"]
