@@ -27,3 +27,6 @@ dist/
 *.egg-info/
 output
 output/
+
+# Generated output files
+*.pdf
